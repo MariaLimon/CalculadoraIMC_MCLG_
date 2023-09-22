@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraIMC_MCLG_.MainPage">
+
+    <StackLayout BackgroundColor="#fbe6d0" Padding="10">
+        <Frame BackgroundColor="#f9dab9" Padding="24" CornerRadius="15">
+            <Label Text="Calculadora de IMC" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="15, 25, 15,15" >
+            <Grid>
+                <Label Text="Peso" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" TextColor="Black" FontSize="17"/>
+                <Entry  Placeholder="Peso" Grid.Row="0" Grid.Column="1" Margin="-80, 0, 0, 0" x:Name="Peso" Keyboard="Numeric" TextColor="Brown"/>
+                <Label Text="Altura" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"  TextColor="Black" FontSize="17"/>
+                <Entry Placeholder="Altura" Grid.Row="1" Grid.Column="1" Margin="-80, 0, 0, 0" x:Name="Altura" Keyboard="Numeric" TextColor="Brown"/>
+                <Entry Placeholder="IMC" Grid.Row="3" Grid.ColumnSpan="2" x:Name="IMC" IsEnabled="False" />
+                <Button Grid.Row="4" Grid.ColumnSpan="2" Text="Calcular IMC" Clicked="Button_Clicked" BackgroundColor="White" CornerRadius="25"/>
+            </Grid>
+
+        </StackLayout>
+    </StackLayout>
+    
+        
+
+
+    
+
+</ContentPage>
